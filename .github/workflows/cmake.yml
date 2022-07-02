@@ -18,7 +18,10 @@ jobs:
         arch: [ Win32, x64 ]
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout repository and submodules
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive
 
     - name: Configure CMake
       run: cmake -B ${{github.workspace}}/build/${{matrix.arch}} -A ${{matrix.arch}} -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
