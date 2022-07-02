@@ -8,6 +8,7 @@ if not "%1"=="" set config=%1
 if "%2"=="/F" rmdir /s /q build bin\x86
 
 call :build x86 Win32
+call :build x64 x64
 goto :end
 
 rem %1 - BUILD_DIR
