@@ -2,6 +2,7 @@ out/
 .vs/
 bin/x86
 bin/x64
+bin/LICENSE
 build/
 ~$*
 bin/ac_matcher.log
