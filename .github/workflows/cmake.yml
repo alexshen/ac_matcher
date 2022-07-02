@@ -27,5 +27,5 @@ jobs:
       run: cmake -B ${{github.workspace}}/build/${{matrix.arch}} -A ${{matrix.arch}} -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
 
     - name: Build
-      run: cmake --build ${{github.workspace}}/build/${{matrix.arc}} --config ${{env.BUILD_TYPE}}
+      run: cmake --build ${{github.workspace}}/build/${{matrix.arch}} --config ${{env.BUILD_TYPE}}
       
