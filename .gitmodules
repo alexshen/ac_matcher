@@ -1,0 +1,4 @@
+[submodule "ac"]
+	path = ac
+	url = git@github.com:alexshen/lua-aho-corasick.git
+	branch = win32

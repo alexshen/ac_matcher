@@ -1,0 +1,7 @@
+out/
+.vs/
+bin/x86
+bin/x64
+build/
+~$*
+bin/ac_matcher.log
